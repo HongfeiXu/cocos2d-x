@@ -24,6 +24,7 @@
 
 #include "main.h"
 #include "../Classes/AppDelegate.h"
+#include "test.h"
 
 USING_NS_CC;
 
@@ -34,6 +35,13 @@ int WINAPI _tWinMain(HINSTANCE hInstance,
 {
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
+
+    // open console
+    AllocConsole();
+    freopen("CONIN$", "r+t", stdin);
+    freopen("CONOUT$", "w", stdout);
+
+    my_test();
 
     // create the application instance
     AppDelegate app;

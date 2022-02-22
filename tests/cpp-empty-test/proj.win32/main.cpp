@@ -36,12 +36,14 @@ int WINAPI _tWinMain(HINSTANCE hInstance,
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
+    // {xhf begin}
     // open console
     AllocConsole();
     freopen("CONIN$", "r+t", stdin);
     freopen("CONOUT$", "w", stdout);
 
     my_test();
+    // {xhf end}
 
     // create the application instance
     AppDelegate app;

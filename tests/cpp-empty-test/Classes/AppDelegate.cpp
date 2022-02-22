@@ -142,6 +142,12 @@ bool AppDelegate::applicationDidFinishLaunching()
     // Create a scene. it's an autorelease object
     auto scene = HelloWorld::scene();
 
+    // {xhf beigin}
+    // ¿ªÆôÃüÁî½»»¥
+    auto console = director->getConsole();
+    console->listenOnTCP(5678);
+    // {xhf end}
+
     // Run
     director->runWithScene(scene);
 

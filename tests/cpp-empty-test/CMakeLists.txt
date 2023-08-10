@@ -50,10 +50,12 @@ list(APPEND GAME_HEADER
      Classes/AppMacros.h
      Classes/HelloWorldScene.h
      Classes/AppDelegate.h
+     Classes/MyTest.h
      )
 list(APPEND GAME_SOURCE
      Classes/AppDelegate.cpp
      Classes/HelloWorldScene.cpp
+     Classes/MyTest.cpp
      )
 
 if(ANDROID)

@@ -24,7 +24,7 @@
 
 #include "main.h"
 #include "../Classes/AppDelegate.h"
-#include "test.h"
+#include "../Classes/MyTest.h"
 
 USING_NS_CC;
 

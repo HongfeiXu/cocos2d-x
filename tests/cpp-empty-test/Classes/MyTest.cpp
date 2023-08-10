@@ -1,9 +1,9 @@
-#include "test.h"
+#include "MyTest.h"
 
 void testVector()
 {
     auto c1 = new MyClass();
-    c1->autorelease();      // 加入自动回收池
+    c1->autorelease();
     auto c2 = new MyClass();
     c2->autorelease();
     CCLOG("reference count c1: %d, c2:%d", c1->getReferenceCount(), c2->getReferenceCount());
